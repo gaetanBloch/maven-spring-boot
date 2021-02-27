@@ -14,6 +14,12 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.gbloch</groupId>
+      <artifactId>web-model</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
@@ -52,7 +58,9 @@
             <configuration>
               <additionalProperties>
                 <java.version>${java.version}</java.version>
-                <foo.version>${foo.version}</foo.version>
+                <git-commit-id-plugin.version>
+                  ${git-commit-id-plugin.version}
+                </git-commit-id-plugin.version>
               </additionalProperties>
             </configuration>
           </execution>
