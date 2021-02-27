@@ -19,6 +19,7 @@
 
   <properties>
     <java.version>11</java.version>
+    <git-commit-id-plugin.version>4.0.3</git-commit-id-plugin.version>
     <foo.version>1</foo.version>
   </properties>
 
@@ -52,6 +53,8 @@
 
   <build>
     <plugins>
+
+      <!--Maven plugin-->
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
@@ -93,6 +96,12 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+
+      <!--Git info plugin-->
+      <plugin>
+        <groupId>pl.project13.maven</groupId>
+        <artifactId>git-commit-id-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
